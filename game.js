@@ -1,19 +1,21 @@
-// var countMultiplier = 1;
-// var speedMultiplier = 1.3;
-// var radiusMultiplier = 1.3;
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const countMultiplier = urlParams.get('cm')
+var countMultiplier = urlParams.get('cm')
 console.log(countMultiplier);
 const queryStrings = window.location.search;
 const urlParamss = new URLSearchParams(queryString);
-const radiusMultiplier = urlParams.get('rm')
-console.log(countMultiplier);
+var radiusMultiplier = urlParams.get('rm')
+console.log(radiusMultiplier);
 const queryStringss = window.location.search;
 const urlParamsss = new URLSearchParams(queryString);
-const speedMultiplier = urlParams.get('sm')
+var speedMultiplier = urlParams.get('sm')
+console.log(speedMultiplier);
+if(countMultiplier == null){countMultiplier = 1};
+if(radiusMultiplier == null){radiusMultiplier = 1};
+if(speedMultiplier == null){speedMultiplier = 1; console.log};
 console.log(countMultiplier);
-
+console.log(radiusMultiplier);
+console.log(speedMultiplier);
 
 class Game {
   constructor() {
