@@ -5,5 +5,7 @@ https://thqrn.github.io/evades-clone/?rm=2&sm=1.2&cm=0.5
 
 ## Modifiers
 rm = radius multiplier (radius of enemies)
+
 sm = speed multiplier (movement speed of enemies)
+
 cm = count multiplier (amount of enemies)
