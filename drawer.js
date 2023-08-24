@@ -776,7 +776,8 @@ function renderPlayers(area, players, focus) {
         context.beginPath();
         let r = 0,
             c = 0;
-        document.getElementById("body").value === "One-Winged Angel" && ((r = -10), (c = -7));
+        document.getElementById("body").value === "One-Winged Angel" &&
+            ((r = -10), (c = -7));
         // if (document.getElementById("body").value != "None")
         //     if (!player.reaperShade)
         //         context.drawImage(
@@ -792,10 +793,12 @@ function renderPlayers(area, players, focus) {
                     body,
                     width / 2 +
                         (player.pos.x - focus.x) * fov -
-                        ((25 * ((player.radius * 32) / 15)) / 32) * fov + r,
+                        ((25 * ((player.radius * 32) / 15)) / 32) * fov +
+                        r,
                     height / 2 +
                         (player.pos.y - focus.y) * fov -
-                        ((25 * ((player.radius * 32) / 15)) / 32) * fov + c,
+                        ((25 * ((player.radius * 32) / 15)) / 32) * fov +
+                        c,
                     (50 / 32) * fov * ((player.radius * 32) / 15),
                     (50 / 32) * fov * ((player.radius * 32) / 15)
                 );
