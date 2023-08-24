@@ -1698,7 +1698,6 @@ class Shield extends Entity {
 }
 class Enemy extends Entity {
   constructor(pos, type, radius, speed, angle, color, aura, auraColor, auraSize) {
-    console.log("hi")
     super(pos, radius, color);
     this.renderFirst = false;
     this.outline = true;

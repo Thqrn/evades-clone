@@ -80,6 +80,7 @@ function loadSecondary() {
 }
 const tiles = new Image();
 const hat = new Image();
+const body = new Image();
 const gem = new Image();
 const magnetDown = new Image();
 const magnetUp = new Image();

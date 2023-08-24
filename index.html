@@ -44,7 +44,7 @@
     #connect {
       position: relative;
       width: 115px;
-      color: rgb(255,255,255);
+      color: rgb(255, 255, 255);
       font-weight: bold;
       text-align: center;
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -56,27 +56,32 @@
       border-color: white;
       display: inline-block;
       background-color: #a3a3a3;
-      transition:.5s;
+      transition: .5s;
     }
+
     #connect:hover {
       background-color: #63c458;
     }
+
     #interact {
       background-color: #EEE;
       padding: 4px;
     }
-    #panel{
+
+    #panel {
       position: fixed;
       left: 0px;
       top: 0px;
       z-index: 20;
     }
-    #name{
+
+    #name {
       position: fixed;
       left: 10px;
       top: 70px;
       z-index: 20;
     }
+
     #world {
       margin: 10px
     }
@@ -96,6 +101,7 @@
       background-color: white;
       padding: 5px;
     }
+
     .settingsElement {
       margin: 5px;
     }
@@ -148,26 +154,52 @@
         <option>Hard</option>
       </select>
       <select id='wreath'>
-        <option>Gold</option>
-        <option>Spring</option>
-        <option>Autumn</option>
-        <option>Winter</option>
-        <option>Summer</option>
+        <option value="None" selected disabled hidden>Hat Cosmetic</option>
+        <option>None</option>
+        <option>Gold Wreath</option>
+        <option>Spring Wreath</option>
+        <option>Autumn Wreath</option>
+        <option>Winter Wreath</option>
+        <option>Summer Wreath</option>
+        <option>Winter Olympics Wreath</option>
+        <option>Summer Olympics Wreath</option>
         <option>Halo</option>
         <option>Santa Hat</option>
         <option>Blue Santa Hat</option>
         <option>Stars</option>
         <option>Flames</option>
         <option>Blue Flames</option>
-        <option>Orbit Ring</option>
-        <option>Sticky Coat</option>
-        <option>Toxic Coat</option>
         <option>Gold Crown</option>
         <option>Silver Crown</option>
         <option>Bronze Crown</option>
         <option>Legacy Hat</option>
-        <option>None</option>
+        <option>Plastic Shine</option>
+        <option>Pirate Hat</option>
+        <option>Pellets</option>
+        <option>Fedora</option>
+        <option>Rose Wreath</option>
+        <option>Sunglasses</option>
+        <option>Autumn Leaves</option>
+        <option>Flower Headband</option>
+        <option>Witch Hat</option>
       </select>
+      <select id='body'>
+        <option value="None" selected disabled hidden>Body Cosmetic</option>
+        <option>None</option>
+        <option>Orbit Ring</option>
+        <option>Sticky Coat</option>
+        <option>Toxic Coat</option>
+        <option>Clouds</option>
+        <option>Storm Clouds</option>
+        <option>Stick</option>
+        <option>One-Winged Angel</option>
+        <option>Mummy Wrap</option>
+        <option>Royal Robes</option>
+        <option>Tuxedo</option>
+        <option>Angel Wings</option>
+        <option>Doughnut</option>
+      </select>
+      <input type="reset" value="Reset Options">
     </div>
     <div id="name">
       <input type="text" id="nick" value="Guest">
@@ -175,26 +207,26 @@
     <div id="settings">
       <div>Settings:</div>
       <div class="settingsElement">
-  <input type="checkbox" id="mouse_toggle" checked>
-  <label>Mouse Toggle Movement</label>
-  <br><br>
-  <input type="checkbox" id="checkbox" checked>
-  <label>Enemy outline</label>
-  <br><br>
-  <input type="checkbox" id="sandbox">
-  <label>Sandbox(60FPS)</label>
-  <br><br>
-  <input type="checkbox" id="timer" checked>
-  <label>Timer</label>
-  <br><br>
-  <input type="checkbox" id="tiles" checked>
-  <label>Tiles</label>
-  <br><br>
-  <input type="checkbox" id="no_points">
-  <label>No Points</label>
-  <br><br>
-  <input type="checkbox" id="dev">
-  <label>Test Mode</label>
+        <input type="checkbox" id="mouse_toggle" checked>
+        <label>Mouse Toggle Movement</label>
+        <br><br>
+        <input type="checkbox" id="checkbox" checked>
+        <label>Enemy outline</label>
+        <br><br>
+        <input type="checkbox" id="sandbox">
+        <label>Sandbox(60FPS)</label>
+        <br><br>
+        <input type="checkbox" id="timer" checked>
+        <label>Timer</label>
+        <br><br>
+        <input type="checkbox" id="tiles" checked>
+        <label>Tiles</label>
+        <br><br>
+        <input type="checkbox" id="no_points">
+        <label>No Points</label>
+        <br><br>
+        <input type="checkbox" id="dev">
+        <label>Test Mode</label>
       </div>
     </div>
   </div>
