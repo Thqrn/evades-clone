@@ -1,18 +1,18 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 var countMultiplier = urlParams.get("cm");
-const queryStrings = window.location.search;
-const urlParamss = new URLSearchParams(queryString);
-var radiusMultiplier = urlParams.get("rm");
-const queryStringss = window.location.search;
-const urlParamsss = new URLSearchParams(queryString);
-var speedMultiplier = urlParams.get("sm");
 if (countMultiplier == null) {
     countMultiplier = 1;
 }
+const queryStrings = window.location.search;
+const urlParamss = new URLSearchParams(queryString);
+var radiusMultiplier = urlParams.get("rm");
 if (radiusMultiplier == null) {
     radiusMultiplier = 1;
 }
+const queryStringss = window.location.search;
+const urlParamsss = new URLSearchParams(queryString);
+var speedMultiplier = urlParams.get("sm");
 if (speedMultiplier == null) {
     speedMultiplier = 1;
     console.log;
